@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">   
+   $(document).ready(function() {
+	function countChecked() {
+		var n = $("input:checked").length;
+		$("div").text(n + (n <= 1 ? " is" : " are") + " checked!");
+		}
+		countChecked();
+		$(":checkbox").click(countChecked);
+   });
+   </script>
+   <style>
+    div { color:red; }
+  </style>
+</head>
+<body>
+<form>
+  <p>
+    <input type="checkbox" name="newsletter" checked="checked" value="Hourly" />
+
+    <input type="checkbox" name="newsletter" value="Daily" />
+    <input type="checkbox" name="newsletter" value="Weekly" />
+
+    <input type="checkbox" name="newsletter" checked="checked" value="Monthly" />
+    <input type="checkbox" name="newsletter" value="Yearly" />
+  </p>
+</form>
+<div></div></br></br>
+
+&lt;form&gt;</br>
+  &lt;p&gt;</br>
+    &lt;input type="checkbox" name="newsletter" checked="checked" value="Hourly" /&gt;</br>
+
+    &lt;input type="checkbox" name="newsletter" value="Daily" /&gt;</br>
+    &lt;input type="checkbox" name="newsletter" value="Weekly" /&gt;</br>
+
+    &lt;input type="checkbox" name="newsletter" checked="checked" value="Monthly" /&gt;</br>
+    &lt;input type="checkbox" name="newsletter" value="Yearly" /&gt;</br>
+  &lt;/p&gt;</br>
+&lt;/form&gt;</br>
+&lt;div&gt;&lt;/div&gt;</br></br>
+
+
+<pre>
+  $(document).ready(function() {
+	function countChecked() {
+      var n = $("input:checked").length;
+	  $("div").text(n + (n <= 1 ? " is" : " are") + " checked!");
+	}
+	countChecked();
+	$(":checkbox").click(countChecked);
+  });
+</pre>
+</body>
+</html>
+

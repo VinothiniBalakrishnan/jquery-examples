@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+   $(document).ready(function() {
+	 $("div").mousemove(function(e){
+      var pageCoords = "( " + e.pageX + ", " + e.pageY + " )";
+      var clientCoords = "( " + e.clientX + ", " + e.clientY + " )";
+      $("span:first").text("( e.pageX, e.pageY ) : " + pageCoords);
+      $("span:last").text("( e.clientX, e.clientY ) : " + clientCoords);
+    });
+   });
+
+   </script>
+   <style>
+    div { width:220px; height:170px; margin: 10px 50px 10px 10px;
+    background:yellow; border:2px groove; float:right; }
+    p { margin:0; margin-left:10px; color:red; width:220px;
+    
+    float:left; font-size:14px; }
+    span { display:block; }
+  </style>
+</head>
+<body>
+  <p>
+    <span>Move the mouse over the div.</span>
+    <span>&nbsp;</span>
+  </p>
+
+  <div></div><br/><br/><br/>
+  
+  &lt;p&gt;<br/>
+    &lt;span&gt;Move the mouse over the div.&lt;/span&gt;<br/>
+    &lt;span&gt;&nbsp;&lt;/span&gt;<br/>
+  &lt;/p&gt;<br/>
+
+  &lt;div&gt;&lt;/div&gt;<br/><br/>
+
+  <pre>
+    $(document).ready(function() {
+	  $("div").mousemove(function(e){
+        var pageCoords = "( " + e.pageX + ", " + e.pageY + " )";
+        var clientCoords = "( " + e.clientX + ", " + e.clientY + " )";
+        $("span:first").text("( e.pageX, e.pageY ) : " + pageCoords);
+        $("span:last").text("( e.clientX, e.clientY ) : " + clientCoords);
+      });
+    });
+  </pre>
+</body>
+</html>
+

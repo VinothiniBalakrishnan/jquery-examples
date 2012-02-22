@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+   $(document).ready(function() {
+	 $("select").change(function () {
+          var str = "";
+          $("select option:selected").each(function () {
+                str += $(this).text() + " ";
+              });
+          $("div").text(str);
+        })
+        .change();
+   });
+
+   </script>
+   <style>
+      div { color:red; }
+  </style>
+</head>
+<body>
+ <select name="sweets" multiple="multiple">
+    <option>Chocolate</option>
+    <option selected="selected">Candy</option>
+
+    <option>Taffy</option>
+    <option selected="selected">Caramel</option>
+    <option>Fudge</option>
+    <option>Cookie</option>
+
+  </select>
+  <div></div></br></br>
+
+  
+    &lt;select name="sweets" multiple="multiple"&gt;<br/>
+    &lt;option&gt;Chocolate&lt;/option&gt;<br/>
+    &lt;option selected="selected"&gt;Candy&lt;/option&gt;<br/>
+    &lt;option&gt;Taffy&lt;/option&gt;<br/>
+    &lt;option selected="selected"&gt;Caramel&lt;/option&gt;<br/>
+    &lt;option&gt;Fudge&lt;/option&gt;<br/>
+    &lt;option&gt;Cookie&lt;/option&gt;<br/>
+    &lt;/select&gt;<br/>
+    &lt;div&gt;&lt;/div&gt;<br/><br/><br/>  
+  
+  
+  <pre>
+  $(document).ready(function() {
+	 $("select").change(function () {
+          var str = "";
+          $("select option:selected").each(function () {
+                str += $(this).text() + " ";
+              });
+          $("div").text(str);
+        })
+     .change();
+  });
+  
+  </pre>
+</body>
+</html>
+

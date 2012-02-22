@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+    $(document).ready(function() {
+
+      $("#down").click(function(){
+         $(".target").slideDown( 'slow', function(){ 
+             $(".log").text('Slide Down Transition Complete');
+          });
+      });
+
+      $("#up").click(function(){
+         $(".target").slideUp( 'slow', function(){ 
+             $(".log").text('Slide Up Transition Complete');
+          });
+      });
+
+   });
+   </script>
+   <style>
+      p {
+           background-color:#bca;
+           width:200px; 
+           border:1px solid green; 
+        }
+  </style>
+</head>
+<body>
+
+   <p>Click on any of the buttons</p>
+   <button id="up"> Slide Up </button>
+   <button id="down"> Slide Down</button> 
+
+   <div class="target">
+      <img src="images/jquery.jpg" alt="jQuery" />
+   </div>
+   <div class="log"></div></br></br>
+   
+   &lt;p&gt;Click on any of the buttons&lt;/p&gt;</br>
+   &lt;button id="up"&gt; Slide Up &lt;/button&gt;</br>
+   &lt;button id="down"&gt; Slide Down&lt;/button&gt;</br>
+
+   &lt;div class="target"&gt;</br>
+      &lt;img src="images/jquery.jpg" alt="jQuery" /&gt;</br>
+   &lt;/div&gt;</br>
+   &lt;div class="log"&gt;&lt;/div&gt;</br></br></br>   
+   
+   <pre>
+    $(document).ready(function() {
+
+      $("#down").click(function(){
+         $(".target").slideDown( 'slow', function(){ 
+             $(".log").text('Slide Down Transition Complete');
+          });
+      });
+
+      $("#up").click(function(){
+         $(".target").slideUp( 'slow', function(){ 
+             $(".log").text('Slide Up Transition Complete');
+          });
+      });
+
+    });
+   
+   </pre>
+  
+</body>
+</html>
+

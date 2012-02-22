@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+   $(document).ready(function() {
+	 var divdbl = $("div:first");
+    divdbl.dblclick(function () { 
+      divdbl.toggleClass('dbl'); 
+    });
+   });
+
+   </script>
+   <style>
+     div { background:blue;
+        color:white;
+        height:100px;
+        width:150px;
+ }
+  div.dbl { background:yellow;color:black; }
+
+  </style>
+</head>
+<body>
+  <div></div><span>Double click the block</span><br/><br/>
+  
+  &lt;div&gt;&lt;/div&gt;<br/>&lt;span&gt;Double click the block&lt;/span&gt;<br/><br/>
+  
+  <pre>
+    $(document).ready(function() {
+       var divdbl = $("div:first");
+       divdbl.dblclick(function () { 
+         divdbl.toggleClass('dbl'); 
+       });
+    });
+  </pre>
+</body>
+</html>
+

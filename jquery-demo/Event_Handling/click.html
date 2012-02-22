@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+   $(document).ready(function() {
+	 $("p").click(function () {
+      $(this).slideUp();
+    });
+    $("p").hover(function () {
+      $(this).addClass("hilite");
+    }, function () {
+      $(this).removeClass("hilite");
+    });
+   });
+
+   </script>
+   <style>
+    p { color:red; margin:5px; cursor:pointer; }
+	p.hilite { background:yellow; }
+
+  </style>
+</head>
+<body>
+ <p>First Paragraph</p>
+  <p>Second Paragraph</p>
+  <p>Yet one more Paragraph</p></br>
+  
+  &lt;p&gt;First Paragraph&lt;/p&gt;</br>
+  &lt;p&gt;Second Paragraph&lt;/p&gt;</br>
+  &lt;p&gt;Yet one more Paragraph&lt;/p&gt;</br></br>
+  
+  
+  <pre>
+    $(document).ready(function() {
+	  $("p").click(function () {
+        $(this).slideUp();
+      });
+      $("p").hover(function () {
+        $(this).addClass("hilite");
+      }, function () {
+      $(this).removeClass("hilite");
+      });
+    });
+  </pre>
+
+</body>
+</html>
+
+

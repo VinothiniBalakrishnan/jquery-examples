@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">   
+   $(document).ready(function() {
+     $("input").click(function() {
+		$("#log").html( $(":checked").val() + " is checked!" ).css('color','red');
+	});
+   });
+   </script>
+   <style>
+     input, label { line-height: 1.5em; }
+  </style>
+</head>
+<body>
+ <form>
+  <div>
+    <input type="radio" name="fruit" value="orange" id="orange">
+    <label for="orange">orange</label>
+  </div>
+  <div>
+    <input type="radio" name="fruit" value="apple" id="apple">
+    <label for="apple">apple</label>
+  </div>
+  <div>
+    <input type="radio" name="fruit" value="banana" id="banana">
+    <label for="banana">banana</label>
+  </div>
+  <div id="log"></div>
+</form></br></br>
+
+ &lt;form&gt;</br>
+  &lt;div&gt;</br>
+    &lt;input type="radio" name="fruit" value="orange" id="orange"&gt;</br>
+    &lt;label for="orange"&gt;orange&lt;/label&gt;</br>
+  &lt;/div&gt;</br>
+  &lt;div&gt;</br>
+    &lt;input type="radio" name="fruit" value="apple" id="apple"&gt;</br>
+    &lt;label for="apple"&gt;apple&lt;/label&gt;</br>
+  &lt;/div&gt;</br>
+  &lt;div&gt;</br>
+    &lt;input type="radio" name="fruit" value="banana" id="banana"&gt;</br>
+    &lt;label for="banana"&gt;banana&lt;/label&gt;</br>
+  &lt;/div&gt;</br>
+  &lt;div id="log"&gt;&lt;/div&gt;</br>
+&lt;/form&gt;</br>
+
+
+<pre>
+$(document).ready(function() {
+  $("input").click(function() {
+	$("#log").html( $(":checked").val() + " is checked!" );
+  });
+});
+</pre>
+</body>
+</html>
+

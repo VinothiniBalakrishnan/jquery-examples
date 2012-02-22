@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">
+
+   $(document).ready(function() {
+      $(".clickme").click(function(event){
+          $(".target").toggle('slow', function(){
+             $(".log").text('Transition Complete');
+          });
+      });
+
+   });
+   </script>
+   <style>
+   .clickme{ margin:10px;padding:12px;
+      border:2px solid #666;
+      width:100px;
+      height:50px;
+    }
+   </style>
+</head>
+<body>
+   <div class="content">
+      <div class="clickme">Click Me</div>
+      <div class="target">
+         <img src="images/jquery.jpg" alt="jQuery" />
+      </div>
+      <div class="log"></div><br/>
+	  
+	  
+	  &lt;div class="content"&gt;<br/>
+      &lt;div class="clickme"&gt;Click Me&lt;/div&gt;<br/>
+      &lt;div class="target"&gt;<br/>
+         &lt;img src="images/jquery.jpg" alt="jQuery" /&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="log"&gt;&lt;/div&gt;<br/><br/>
+	  
+	  
+<pre>
+    $(document).ready(function() {
+	 $(".clickme").click(function(event){
+	   $(".target").toggle('slow', function(){
+		 $(".log").text('Transition Complete');
+	   });
+	 });
+    });	  
+</pre>
+</body>
+</html>
+

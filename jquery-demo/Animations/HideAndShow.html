@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+   $(document).ready(function() {
+
+     $("#show").click(function () {
+        $(".mydiv").show( 1000 );
+     });
+
+     $("#hide").click(function () {
+        $(".mydiv").hide( 1000 );
+     });
+
+   });
+
+   </script>
+   <style>
+   .mydiv{ margin:10px;padding:12px;
+      border:2px solid #666;
+      width:100px;
+      height:100px;
+    }
+  </style>
+</head>
+<body>
+   <div class="mydiv">
+      This is  SQUARE
+   </div>
+
+   <input id="hide" type="button" value="Hide" />   
+   <input id="show" type="button" value="Show" /> </br></br></br>  
+   
+   
+   &lt;div class="mydiv"&gt;</br>  
+      This is  SQUARE</br>  
+   &lt;/div&gt;</br>  
+
+   &lt;input id="hide" type="button" value="Hide" /&gt; </br>    
+   &lt;input id="show" type="button" value="Show" /&gt;   
+   </br></br> 
+   
+   
+   
+   
+   <pre>
+    $(document).ready(function() {
+      $("#show").click(function () {
+        $(".mydiv").show( 1000 );
+      });
+      $("#hide").click(function () {
+        $(".mydiv").hide( 1000 );
+      });
+    });   
+   </pre>
+</body>
+</html>

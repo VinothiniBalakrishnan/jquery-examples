@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+   $(document).ready(function() {
+	$("input").blur(function () {
+         $(this).next("span").css('display','inline').fadeOut(1000);
+    });
+   });
+
+   </script>
+   <style>
+     span {display:none;}
+  </style>
+</head>
+<body>
+
+
+<p><input type="text" /> <span>blur fire</span></p>
+<p><input type="password" /> <span>blur fire</span></p>
+
+&lt;p&gt;&lt;input type="text" /&gt; &lt;span&gt;blur fire&lt;/span&gt;&lt;/p&gt;<br/>
+&lt;p&gt;&lt;input type="password" /&gt; &lt;span&gt;blur fire&lt;/span&gt;&lt;/p&gt;<br/><br/>
+
+
+<pre>
+ $(document).ready(function() {
+	$(":input").blur(function () {
+         $(this).next("span").css('display','inline').fadeOut(1000);
+    });
+ });
+</pre>
+
+
+</body>
+</html>
+

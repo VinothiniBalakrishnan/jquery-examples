@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+   $(document).ready(function() {
+    $(window).resize(function() {
+     $('#log').append('<div>Handler for .resize() called.</div>');
+   });
+   });
+
+   </script>
+   <style>
+     
+  </style>
+</head>
+<body>
+ <div id="log">jQuery is great</div></br>
+
+  &lt;div id="log"&gt;jQuery is great&lt;/div&gt;</br></br>
+ 
+  <pre>
+    $(document).ready(function() {
+      $(window).resize(function() {
+       $('#log').append('&lt;div&gt;Handler for .resize() called.&lt;/div&gt;');
+      });
+    });
+  </pre>
+ 
+ </body>
+</html>
+

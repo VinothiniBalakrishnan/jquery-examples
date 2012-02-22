@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">   
+   $(document).ready(function() {
+	$("div").click(function () {
+		$(this).fadeTo("fast", Math.random());
+	});
+   });
+   </script>
+   <style>
+     p { width:80px; margin:0; padding:5px; }
+	div { width:40px; height:40px; position:absolute; }
+	div#one { top:0; left:0; background:#f00; }
+	div#two { top:20px; left:20px; background:#0f0; }
+	div#three { top:40px; left:40px; background:#00f; }
+  </style>
+</head>
+<body>
+	<p>And this is the library that John built...</p>
+	<div id="one"></div>
+	<div id="two"></div>
+	<div id="three"></div><br/><br/><br/>
+	
+	&lt;p&gt;And this is the library that John built...&lt;/p&gt;<br/>
+	&lt;div id="one"&gt;&lt;/div&gt;<br/>
+	&lt;div id="two"&gt;&lt;/div&gt;<br/>
+	&lt;div id="three"&gt;&lt;/div&gt;<br/><br/><br/>
+	
+	
+	
+	
+	<pre>
+	$(document).ready(function() {
+		$("div").click(function () {
+			$(this).fadeTo("fast", Math.random());
+		});
+	});
+	</pre>
+</body>
+</html>
+

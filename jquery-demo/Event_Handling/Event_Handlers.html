@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+   $(document).ready(function() {
+		$("li").hover(  function () {
+			$(this).append($("<span> ***</span>"));
+			}, function () {
+			$(this).find("span:last").remove();
+		});
+   });
+
+   </script>
+   <style>
+      #division{ margin:10px;padding:12px;
+                 border:2px solid #666;
+                 width:60px;
+               }
+  </style>
+</head>
+<body>
+  <ul><li>Milk</li><li>Apple</li></ul> </br>
+  
+  &lt;ul&gt;</br>&lt;li&gt;Milk&lt;/li&gt;</br>&lt;li&gt;Apple&lt;/li&gt;</br>&lt;/ul&gt; </br></br>
+  
+  <pre>
+	$(document).ready(function() {
+		$("li").hover(  function () {
+			$(this).append($("&lt;span&gt; ***&lt;/span&gt;"));
+		}, function () {
+			$(this).find("span:last").remove();
+		});
+	});
+  </pre>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+   $(document).ready(function() {
+	$("input").focus(function () {
+         $(this).next("span").css('display','inline').fadeOut(1000);
+    });
+   });
+
+   </script>
+   <style>
+     span {display:none;}
+  </style>
+</head>
+<body>
+  <p><input type="text" /> <span>focus fire</span></p>
+  <p><input type="password" /> <span>focus fire</span></p><br/>
+
+  &lt;p&gt;&lt;input type="text" /&gt; <br/> &lt;span&gt;focus fire&lt;/span&gt;&lt;/p&gt;<br/>
+  &lt;p&gt;&lt;input type="password" /&gt; <br/> &lt;span&gt;focus fire&lt;/span&gt;&lt;/p&gt;<br/><br/>
+  
+  
+  <pre>
+    $(document).ready(function() {
+	  $("input").focus(function () {
+         $(this).next("span").css('display','inline').fadeOut(1000);
+      });
+   });
+  </pre>
+
+</body>
+</html>
+

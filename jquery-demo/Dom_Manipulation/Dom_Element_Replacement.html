@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+   $(document).ready(function() {
+
+     $("div").click(function () {
+       $(this).replaceWith("<h1>JQuery is Great</h1>");
+    });
+
+   });
+
+   </script>
+   <style>
+      #division{ margin:10px;padding:12px;
+                 border:2px solid #666;
+                 width:60px;
+               }
+  </style>
+</head>
+<body>
+   <p>Click on the square below:</p>
+   <div id="division" style="background-color:blue;">
+     This is Blue Square!!
+   </div><br/><br/>
+   
+   &lt;p&gt;Click on the square below:&lt;/p&gt;><br/>
+   &lt;div id="division" style="background-color:blue;"&gt;><br/>
+     This is Blue Square!!><br/>
+   &lt;/div&gt;<br/>
+   
+   
+   <pre>
+    $(document).ready(function() {
+      $("div").click(function () {
+        $(this).replaceWith("&lt;h1&gt;JQuery is Great&lt;/h1&gt;");
+      });
+    });
+   </pre>
+</body>
+</html>
+
